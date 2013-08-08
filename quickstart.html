@@ -85,12 +85,33 @@
 
         <hr>
 
+		<fieldset>
+			<legend>Upload your pictures!</legend>
+
+			<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+			<div>
+				<label for="fileselect">Files to upload:</label>
+				<input class = "input" type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+				<div id="filedrag">or drop files here</div>
+			</div>
+
+			<div id="submitbutton">
+				<button type="submit">Upload Files</button>
+			</div>
+
+		</fieldset>
+
+		<div id="messages">
+			<p>Pictures!</p>
+		</div>
+
         <footer>
           <p>&copy; mukk :) </p>
         </footer>
       </div>
 
     </div> <!-- /container -->
-
+	<script src="filedrag.js"></script>
   </body>
 </html>
