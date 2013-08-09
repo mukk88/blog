@@ -734,6 +734,31 @@ pre code {
   clear: both;
 }
 
+.tabcontainer {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tabcontainer:before,
+.tabcontainer:after {
+  display: table;
+  content: " ";
+}
+
+.tabcontainer:after {
+  clear: both;
+}
+
+.tabcontainer:before,
+.tabcontainer:after {
+  display: table;
+  content: " ";
+}
+
+.tabcontainer:after {
+  clear: both;
+}
+
 .row:before,
 .row:after {
   display: table;
@@ -875,6 +900,10 @@ pre code {
   .container {
     max-width: 728px;
   }
+  .tabcontainer {
+    max-width: 728px;
+  }
+
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
@@ -997,6 +1026,9 @@ pre code {
   .container {
     max-width: 940px;
   }
+  .tabcontainer {
+    max-width: 940px;
+  }
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
@@ -1084,6 +1116,9 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
+    max-width: 1170px;
+  }
+  .tabcontainer {
     max-width: 1170px;
   }
 }
