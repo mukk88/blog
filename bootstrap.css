@@ -4375,6 +4375,11 @@ a.list-group-item.active > .badge,
     padding: 50px 60px;
     border-radius: 6px;
   }
+  .subjumobtron{
+    padding: 30px 30px;
+    border-radius: 2px;
+  }
+
   .jumbotron h1 {
     font-size: 63px;
   }
