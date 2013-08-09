@@ -58,10 +58,8 @@ Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
 		if (file.type.indexOf("image") == 0) {
 			var reader = new FileReader();
 			reader.onload = function(e) {
-				Output(
-					"<p><strong>" + file.name + ":</strong><br />" +
-					'<img style = "height:300px;width:auto;"src="' + e.target.result + '" /></p>'
-				);
+				var pic = document.getElementById("profile");
+				pic.src = e.target.result;	
 			}
 			reader.readAsDataURL(file);
 		}

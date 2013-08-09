@@ -14,6 +14,7 @@
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
+    <link href="mukk.css" rel="stylesheet">
   </head>
 
   <body>
@@ -48,13 +49,17 @@
       </div>
     </div>
 
-    <div class="container">
+    <div id = "home" class="container">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>i heart belle</h1>
-        <p>This is a where you would put the text that you want people to see everyday belle. As time goes on we can continue to add more and more features and different tabs that can do more things!</p>
-        <!-- <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p> -->
+        <!-- <div style="display:inline;"> -->
+        <!-- </div>   -->
+        <div style="display:inline;">
+          <h1>i heart belle! <img id = "profile" align = "right" src = "./uploads/me.jpg" width = "150" height = "auto"></h1>
+          <p>This is a where you would put the text that you want people to see everyday belle. As time goes on we can continue to add more and more features and different tabs that can do more things! if you select a picture below it changes your picture :)</p>
+          <!-- <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p> -->
+        </div>
       </div>
 
       <div class="body-content">
@@ -72,33 +77,31 @@
 <!--             <p><a class="btn btn-default" href="#">View details &raquo;</a></p> -->
          </div>
           <div class="col-lg-4">
-            <h2>Friends</h2>
-            <p>i am not sure what you can do here. perhaps we can have links to other peoples webpages? or i dunno. we can be creative and think about what to do when we discuss. tell me if you like this layout. or we can do something totally different :)</p>
-            <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+                <form id="upload" action="upload.php" method="POST" enctype="multipart/form-data">
+                  <fieldset>
+                    <legend>Upload your pictures!</legend>
+
+                    <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="2000000" />
+
+                    <div>
+                      <label for="fileselect">Files to upload:</label>
+                      <input class = "input" type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+                      <div id="filedrag">or drop files here</div>
+                    </div>
+
+                    <div id="submitbutton">
+                      <button type="submit">Upload Files</button>
+                    </div>
+
+                  </fieldset>
+                </form>
           </div>
         </div>
 
         <hr>
-    <form id="upload" action="upload.php" method="POST" enctype="multipart/form-data">
-  		<fieldset>
-  			<legend>Upload your pictures!</legend>
 
-  			<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="2000000" />
-
-  			<div>
-  				<label for="fileselect">Files to upload:</label>
-  				<input class = "input" type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
-  				<div id="filedrag">or drop files here</div>
-  			</div>
-
-  			<div id="submitbutton">
-  				<button type="submit">Upload Files</button>
-  			</div>
-
-  		</fieldset>
-    </form>
 		<div id="messages">
-			<p>Pictures!</p>
+			<p>Uploaded Pictures!</p>
 		</div>
 
         <footer>
@@ -107,6 +110,13 @@
       </div>
 
     </div> <!-- /container -->
+
+    <div id = "travel" class = "container">
+
+    </div>
+    <div id = "images" class = "container">
+
+    </div>
 	<script src="filedrag.js"></script>
   </body>
 </html>
