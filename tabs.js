@@ -13,5 +13,4 @@ function switchTab(tabname, containername){
 
 	document.getElementById(tabname).className = "tab active";
 	document.getElementById(containername).style.display = 'block'
-
 }

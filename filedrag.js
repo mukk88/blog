@@ -10,14 +10,6 @@ Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
 		return document.getElementById(id);
 	}
 
-
-	// output information
-	function Output(msg) {
-		var m = $id("messages");
-		m.innerHTML = m.innerHTML + msg;
-	}
-
-
 	// file drag hover
 	function FileDragHover(e) {
 		e.stopPropagation();
@@ -38,7 +30,8 @@ Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
 		// process all File objects
 		for (var i = 0, f; f = files[i]; i++) {
 			ParseFile(f);
-			UploadFile(f);
+			// do not this for now
+			// UploadFile(f);
 		}
 
 	}
@@ -46,13 +39,6 @@ Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
 
 	// output file information
 	function ParseFile(file) {
-
-		Output(
-			"<p>File information: <strong>" + file.name +
-			"</strong> type: <strong>" + file.type +
-			"</strong> size: <strong>" + file.size +
-			"</strong> bytes</p>"
-		);
 
 		// display an image
 		if (file.type.indexOf("image") == 0) {
