@@ -5,19 +5,20 @@
 	<title>chicago trip</title>
 	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
 	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<script type="text/javascript" src=resize.js></script>
 </head>
-<body style="background-color:#101010">
+<body style="background-color:#101010" onload = "recal()" onresize = "recal()">
 	<div id="wowslider-container1">
 		<div class="ws_images">
 			<ul>
-				<li><img src="./images/chicago/bean.jpg" height = "auto"/></li>
-				<li><img src="./images/chicago/cheryl.jpg" height = "auto"/></li>
-				<li><img src="./images/chicago/cube.jpg" height = "auto"/></li>
-				<li><img src="./images/chicago/jump.jpg" height = "auto"/></li>
-				<li><img src="./images/chicago/lego.jpg" height = "auto"/></li>
-				<li><img src="./images/chicago/pier.jpg" height = "auto"/></li>
-				<li><img src="./images/chicago/pizza.jpg" height = "auto"/></li>
-				<li><img src="./images/chicago/rae.jpg" height = "auto"/></li>
+				<li style="text-align:center"><img id = "firstimage" src="./images/chicago/cube.jpg" height = "auto"/></li>
+				<li style="text-align:center"><img src="./images/loveny.jpg" height = "auto"/></li>
+				<li  style="text-align:center"><img src="./images/cheryl.jpg" style = "height:700px !important;width:auto !important;left:350px !important"/></li>
+				<li style="text-align:center"><img src="./images/chicago/jump.jpg" height = "auto"/></li>
+				<li style="text-align:center"><img src="./images/chicago/lego.jpg" height = "auto"/></li>
+				<li style="text-align:center"><img src="./images/chicago/pier.jpg" height = "auto"/></li>
+				<li style="text-align:center"><img src="./images/chicago/pizza.jpg" height = "auto"/></li>
+				<li style="text-align:center"><img src="./images/chicago/rae.jpg" height = "auto"/></li>
 			</ul>
 		</div>
 

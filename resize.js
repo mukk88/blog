@@ -30,3 +30,7 @@ function autoResize(){
     ctx.stroke();
   }
 }
+
+function recal(){
+  var first = document.getElementById("firstimage");
+}
