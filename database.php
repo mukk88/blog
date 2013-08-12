@@ -8,7 +8,7 @@ try{
                     array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
     foreach($db->query('SELECT * FROM users') as $row) {
-    	echo $row['username'].;
+    	echo $row['username'].
 	}
 
 
