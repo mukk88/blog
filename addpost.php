@@ -9,7 +9,7 @@ try{
 
 
 	$qry = $db->prepare(
-    'INSERT INTO posts (title, words, hash, icon, cover, images, public) VALUES (?, ?,?,?,?,?,?,?)');
+    'INSERT INTO posts (title, words, hash, icon, cover, images, public) VALUES (?,?,?,?,?,?,?)');
 	$qry->execute(array('$_POST[title]','$_POST[words]', '', '', '', '',1 ));
 
 	echo 'post added';	
