@@ -12,10 +12,10 @@ try{
 
 
 	$qry = $db->prepare(
-    'INSERT INTO posts (title, words, hash, icon, cover, images, public) VALUES (?,?,?,?,?,?,?)');
-	$qry->execute(array($title,$words, '', '', '', '',1 ));
+    'INSERT INTO posts (title, words, description, hash, icon, cover, images, public) VALUES (?,?,?,?,?,?,?,?)');
+	$qry->execute(array($title,$words,'', '', '', '', '',1 ));
 
-	echo 'post added';	
+	header('Location: markwoo.i-xo.net' ) ;
 }
 
 
