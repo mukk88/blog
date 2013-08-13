@@ -7,10 +7,13 @@ try{
                     'dbPa$$w0rd',
                     array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
+    $title = $_POST[title];
+    $words = $_POST[words];
+
 
 	$qry = $db->prepare(
     'INSERT INTO posts (title, words, hash, icon, cover, images, public) VALUES (?,?,?,?,?,?,?)');
-	$qry->execute(array('$_POST[title]','$_POST[words]', '', '', '', '',1 ));
+	$qry->execute(array($title,$words, '', '', '', '',1 ));
 
 	echo 'post added';	
 }
