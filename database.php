@@ -12,8 +12,8 @@ try{
 	}
 
 	$qry = $db->prepare(
-    'INSERT INTO posts (id, title, words, hash, icon, cover, images, public) VALUES (?, ?,?,?,?,?,?,?)');
-	$qry->execute(array(1,'my first post','a bunch of words', '', '', '', '',1 ));
+    'INSERT INTO posts (title, words, hash, icon, cover, images, public) VALUES (?,?,?,?,?,?,?)');
+	$qry->execute(array('my first post','a bunch of words', '', '', '', '',1 ));
 
 	echo $qry.' were affected';	
     // die(json_encode(array('outcome' => true)));
