@@ -1,0 +1,11 @@
+unused
+
+              <br>
+              <ul class="sort-by">
+                  <li class="sort btn btn-default" data-sort="name">Sort by name</li>
+                  <li class="sort btn btn-default" data-sort="category">Sort by category</li>
+              </ul>
+              <ul class="filter">
+                  <li class="btn btn-default" id="filter-none">Show all</li>
+                  <li class="btn btn-default" id="filter-games">Only show games</li>
+                  <li class="btn btn-default" id="filter-beverages">Only show beverages</li>
