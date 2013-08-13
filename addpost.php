@@ -9,15 +9,16 @@ try{
 
     $title = $_POST[title];
     $words = $_POST[words];
+    $description = $_POST[description];
+    $hash = $_POST[hash];
 
 
 	$qry = $db->prepare(
     'INSERT INTO posts (title, words, description, hash, icon, cover, images, public) VALUES (?,?,?,?,?,?,?,?)');
-	$qry->execute(array($title,$words,'', '', '', '', '',1 ));
+	$qry->execute(array($title,$words,$description, $hash, '', '', '',1 ));
 
 	header('Location: quickstart.html' ) ;
 }
-
 
 catch(PDOException $ex){
     die(json_encode(array('outcome' => false, 'message' => 'error')));
