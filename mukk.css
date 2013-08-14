@@ -106,8 +106,10 @@ input{
 #postslist .list {
   clear: both;
   margin-bottom: 10px;
+  text-decoration: none !important;
 }
 #postslist .list li {
+  text-decoration: none !important;
   padding: 15px;
 }
 #postslist li:nth-child(2n+1) {
@@ -142,5 +144,9 @@ input{
 }
 
 #postslist .main{
-  visibility: none;
+  display:none;
+}
+
+a{
+  text-decoration: none !important;
 }
