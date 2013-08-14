@@ -137,7 +137,8 @@
                               'mukk88','dbPa$$w0rd', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                       $result = $dbh->query("SELECT * FROM posts");
                       foreach ($result as $row) {
-                        echo "<a href='javascript:toggle('post".$row['id']."')''>";
+                        $id = "'post".$row['id']."'";
+                        echo '<a href="javascript:toggle('.$id.')">';
                         echo "<li>";
                         echo "<img src='images/loveny.jpg' class='thumb' />";
                         echo "<h4><span id='post".$row['id']."' class='name'>".$row['title']."</span>";
