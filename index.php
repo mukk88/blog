@@ -109,6 +109,24 @@
           <h2 style="margin-left:50px;display:inline">Journal Posts</h2>    
             <input class="search searchbar" align="right" placeholder="Search posts" />
               <ul class="list">
+                    <?php 
+                      $dbh = new pdo( 'mysql:host=mysql.markwoo.i-xo.net;dbname=markwoo;charset=utf8',
+                              'mukk88','dbPa$$w0rd', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                      $result = $dbh->query("SELECT * FROM posts ORDER BY id ASC");
+                      foreach ($result as $row) {
+                        $id = "'post".$row['id']."'";
+                        echo "<li>";
+                        echo '<a href="javascript:toggle('.$id.')">';
+                        echo "<img src='images/default.jpg' class='thumb' />";
+                        echo "<h4><span class='name'>".$row['title']."</span>";
+                        echo "<span class='category'></span>".$row['hash']."</h4>";
+                        echo "<p class='description'>".$row['description']."</p>";
+                        echo "<p id='post".$row['id']."' class='main'>".$row['words']."</p>";
+                        echo "</a>";
+                        echo "</li>";
+                      }
+
+                   ?>
                   <li>
                       <img src="images/gumwall.jpg" class="thumb" />
                       <h4><span class="name">Seattle!</span></h4>
@@ -133,24 +151,6 @@
                       <span class="category"></span>
                       <p class="description">mukk: it seems so long ago that we went to the zoo together. it is at times like these that i am glad that belle managed to convince me to take a few good photos haha. maybe in the future i will learn my lesson and be more willing. maybe. </p>
                   </li>
-                  <?php 
-                      $dbh = new pdo( 'mysql:host=mysql.markwoo.i-xo.net;dbname=markwoo;charset=utf8',
-                              'mukk88','dbPa$$w0rd', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-                      $result = $dbh->query("SELECT * FROM posts");
-                      foreach ($result as $row) {
-                        $id = "'post".$row['id']."'";
-                        echo "<li>";
-                        echo '<a href="javascript:toggle('.$id.')">';
-                        echo "<img src='images/loveny.jpg' class='thumb' />";
-                        echo "<h4><span class='name'>".$row['title']."</span>";
-                        echo "<span class='category'></span>".$row['hash']."</h4>";
-                        echo "<p class='description'>".$row['description']."</p>";
-                        echo "<p id='post".$row['id']."' class='main'>".$row['words']."</p>";
-                        echo "</a>";
-                        echo "</li>";
-                      }
-
-                   ?>
               </ul>
           </div>
         </div>
