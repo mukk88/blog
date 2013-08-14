@@ -32,5 +32,16 @@ function autoResize(){
 }
 
 function recal(){
-  var height = $('.firstimage').height(); 
+  var i, len, width, maxwidth;
+  var height = $('#firstimage').height(); 
+  maxwidth = $('#firstimage').width(); 
+  var images = document.getElementsByClassName("images");
+  for(i=0,len=images.length;i<len;i++){
+    images[i].height = height;
+    width = images[i].offsetWidth;
+    if(maxwidth-width>0){
+      var leftspace = (maxwidth-width)/2;
+      images[i].style["margin-left"] = leftspace + "px";
+    }
+  }
 }

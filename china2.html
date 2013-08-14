@@ -5,21 +5,22 @@
 	<title>chicago trip</title>
 	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
 	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<script type="text/javascript" src=resize.js></script>
 </head>
-<body style="background-color:#101010">
+<body style="background-color:#101010" onload = "recal()" onresize = "recal()">
 	<div id="wowslider-container1">
 		<div class="ws_images">
 			<ul>
-				<li><img src="images/china/chengdu2.jpg" height = "auto"/></li>
-				<li><img src="images/china/chengdu.jpg" height = "auto"/></li>
-				<li><img src="images/china/chengdu3.jpg" height = "auto"/></li>
-				<li><img src="images/china/shanghai.jpg" height = "auto"/></li>
-				<li><img src="images/china/shanghai2.jpg" height = "auto"/></li>
-				<li><img src="images/china/food.jpg" height = "auto"/></li>
-				<li><img src="images/china/food2.jpg" height = "auto"/></li>
-				<li><img src="images/china/jiuzhai.jpg" height = "auto"/></li>
-				<li><img src="images/china/market.jpg" height = "auto"/></li>
-				<li><img src="images/china/hongkong.jpg" height = "auto"/></li>
+				<li><img id = "firstimage" src="images/china/chengdu2.jpg" height = "auto"/></li>
+				<li><img class = "images" src="images/china/chengdu.jpg" height = "auto" style = "width:auto !important;"/></li>
+				<li><img class = "images" src="images/china/chengdu3.jpg" height = "auto" style = "width:auto !important;"/></li>
+				<li><img class = "images" src="images/china/shanghai.jpg" height = "auto" style = "width:auto !important;"/></li>
+				<li><img class = "images" src="images/china/shanghai2.jpg" height = "auto" style = "width:auto !important;"/></li>
+				<li><img class = "images" src="images/china/food.jpg" height = "auto" style = "width:auto !important;"/></li>
+				<li><img class = "images" src="images/china/food2.jpg" height = "auto" style = "width:auto !important;"/></li>
+				<li><img class = "images" src="images/china/jiuzhai.jpg" height = "auto" style = "width:auto !important;"/></li>
+				<li><img class = "images" src="images/china/market.jpg" height = "auto" style = "width:auto !important;"/></li>
+				<li><img class = "images" src="images/china/hongkong.jpg" height = "auto" style = "width:auto !important;"/></li>
 			</ul>
 		</div>
 		<div class="ws_bullets">
