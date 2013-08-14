@@ -139,15 +139,15 @@
                       $result = $dbh->query("SELECT * FROM posts");
                       foreach ($result as $row) {
                         $id = "'post".$row['id']."'";
-                        echo '<a href="javascript:toggle('.$id.')">';
                         echo "<li>";
+                        echo '<a href="javascript:toggle('.$id.')">';
                         echo "<img src='images/loveny.jpg' class='thumb' />";
                         echo "<h4><span class='name'>".$row['title']."</span>";
                         echo "<span class='category'></span>".$row['hash']."</h4>";
                         echo "<p class='description'>".$row['description']."</p>";
                         echo "<p id='post".$row['id']."' class='main'>".$row['words']."</p>";
-                        echo "</li>";
                         echo "</a>";
+                        echo "</li>";
                       }
 
                    ?>
