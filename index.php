@@ -121,7 +121,7 @@
                         echo "<h4><span class='name'>".$row['title']."</span>";
                         echo "<span style = 'display:none' class='category'></span>".$row['hash']."</h4>";
                         echo "<p class='description'>".$row['description']."</p>";
-                        echo "<p id='post".$row['id']."' class='main'>".$row['words']."</p>";
+                        echo nl2br("<p id='post".$row['id']."' class='main'>".$row['words']."</p>");
                         echo "</a>";
                         echo "</li>";
                       }
