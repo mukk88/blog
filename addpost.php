@@ -17,7 +17,7 @@ try{
     'INSERT INTO posts (title, words, description, hash, icon, cover, images, public) VALUES (?,?,?,?,?,?,?,?)');
 	$qry->execute(array($title,$words,$description, $hash, '', '', '',1 ));
 
-	header('Location: quickstart.html' ) ;
+	header('Location: index.php' ) ;
 }
 
 catch(PDOException $ex){
