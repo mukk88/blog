@@ -132,6 +132,20 @@
                       <span class="category"></span>
                       <p class="description">mukk: it seems so long ago that we went to the zoo together. it is at times like these that i am glad that belle managed to convince me to take a few good photos haha. maybe in the future i will learn my lesson and be more willing. maybe. </p>
                   </li>
+                  <?php 
+                      $dbh = new pdo( 'mysql:host=mysql.markwoo.i-xo.net;dbname=markwoo;charset=utf8',
+                              'mukk88','dbPa$$w0rd', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                      $result = $dbh->query("SELECT * FROM students");
+                      foreach ($result as $row) {
+                        echo "<li>";
+                        echo "<img src='images/loveny.jpg' class='thumb' />";
+                        echo "<h4><span class='name'>".$row['title']."</span>";
+                        echo "<span class='category'></span>".$row['hash']."</h4>";
+                        echo "<p class='description'>".$row['description']."</p>"
+                        echo "</li>"
+                      }
+
+                   ?>
               </ul>
           </div>
         </div>
@@ -167,6 +181,6 @@
       </footer>
     </div>
 
-	<script src="filedrag.js"></script>
+  <script src="filedrag.js"></script>
   </body>
 </html>
