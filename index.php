@@ -112,14 +112,14 @@
                     <?php 
                       $dbh = new pdo( 'mysql:host=mysql.markwoo.i-xo.net;dbname=markwoo;charset=utf8',
                               'mukk88','dbPa$$w0rd', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-                      $result = $dbh->query("SELECT * FROM posts ORDER BY id ASC");
+                      $result = $dbh->query("SELECT * FROM posts ORDER BY id DESC");
                       foreach ($result as $row) {
                         $id = "'post".$row['id']."'";
                         echo "<li>";
                         echo '<a href="javascript:toggle('.$id.')">';
                         echo "<img src='images/default.jpg' class='thumb' />";
                         echo "<h4><span class='name'>".$row['title']."</span>";
-                        echo "<span class='category'></span>".$row['hash']."</h4>";
+                        echo "<span style = 'display:none' class='category'></span>".$row['hash']."</h4>";
                         echo "<p class='description'>".$row['description']."</p>";
                         echo "<p id='post".$row['id']."' class='main'>".$row['words']."</p>";
                         echo "</a>";
