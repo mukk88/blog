@@ -145,7 +145,7 @@
                         echo "<p class='description'>".$row['description']."</p>";
                         echo "<p class='main'>".$row['words']."</p>";
                         echo "</li>";
-                        echo "</a>"
+                        echo "</a>";
                       }
 
                    ?>
