@@ -141,8 +141,8 @@
                         echo "<img src='images/loveny.jpg' class='thumb' />";
                         echo "<h4><span class='name'>".$row['title']."</span>";
                         echo "<span class='category'></span>".$row['hash']."</h4>";
-                        echo "<p class='description'>".$row['description']."</p>"
-                        echo "</li>"
+                        echo "<p class='description'>".$row['description']."</p>";
+                        echo "</li>";
                       }
 
                    ?>
