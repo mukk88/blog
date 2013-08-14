@@ -9,6 +9,7 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="resize.js"></script>
     <script type="text/javascript" src="listjs.js"></script>
+    <script type="text/javascript" src="toggle.js"></script>
   </head>
 
   <body  style="background-color:#101010" onload="autoResize()" onresize="autoResize()">
@@ -141,10 +142,10 @@
                         echo '<a href="javascript:toggle('.$id.')">';
                         echo "<li>";
                         echo "<img src='images/loveny.jpg' class='thumb' />";
-                        echo "<h4><span id='post".$row['id']."' class='name'>".$row['title']."</span>";
+                        echo "<h4><span class='name'>".$row['title']."</span>";
                         echo "<span class='category'></span>".$row['hash']."</h4>";
                         echo "<p class='description'>".$row['description']."</p>";
-                        echo "<p class='main'>".$row['words']."</p>";
+                        echo "<p id='post".$row['id']."' class='main'>".$row['words']."</p>";
                         echo "</li>";
                         echo "</a>";
                       }
