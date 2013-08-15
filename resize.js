@@ -1,6 +1,6 @@
 function autoResize(){
   var i, len, iframedivs, canvases, ctx;
-  var width = $('#images').width();
+  var width = $('#imageslist').width();
   var adjusted = width*0.57;
   iframedivs = document.getElementsByClassName("iframediv");
   for(i = 0, len = iframedivs.length;i<len;i++){
@@ -30,6 +30,8 @@ function autoResize(){
     ctx.stroke();
   }
 }
+
+window.onresize = recal;
 
 function recal(){
   var i, len, width, maxwidth;

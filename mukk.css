@@ -93,6 +93,16 @@ input{
   position:static;
 }
 
+.searchbarimages{
+  border-radius: 10px;
+  padding: 2px 10px;
+
+  font-size: 17px;
+  float:right;
+  position:static;
+}
+
+
 #postslist {
   margin-bottom: 60px;
 }
@@ -149,4 +159,18 @@ input{
 
 a{
   text-decoration: none !important;
+}
+
+.paging{
+  margin-top: 500px;
+  display: inline;
+}
+
+.paging li{
+  display: inline;
+  padding: 10px 10px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  background: #282828;
+  border-radius: 2px;
 }

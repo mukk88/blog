@@ -100,11 +100,8 @@
     <div style = "display:none" id = "posts" class = "container">
 
       <div id="main">
-
-        <div class="c1">
-
           <div id="postslist">
-            <br>
+             <br>
             <br>
           <h2 style="margin-left:50px;display:inline">Journal Posts</h2>    
             <input class="search searchbar" align="right" placeholder="Search posts" />
@@ -153,7 +150,6 @@
                   </li>
               </ul>
           </div>
-        </div>
       </div>
       <script type="text/javascript" src="postslist.js"></script>
       <footer>
@@ -164,22 +160,54 @@
 
     <div  id = "images" class = "container">
       <div class="body-content">
-        <div id = "demo"></div>
-        <canvas class = "canvas" id = "Chicago" height = "80" width = "1200"></canvas>
-        <div class = "iframediv" style = "height:600px;overflow:hidden">
-          <iframe id = "chicagoiframe" src="chicago.html" style="width:100%;height:2000px;max-width:100%;overflow-x:hidden;overflow-y:hidden;border:none;padding:0;margin:0  auto;display:block;"scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        </div>
-
-        <canvas class = "canvas" id = "China" height = "80" width = "1200"></canvas>
-        <div class = "iframediv" style = "height:600px;overflow:hidden">
-          <iframe src="china.html" style="width:1250px; height:2000px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0  auto;display:block;" marginheight="0"marginwidth="0" scrolling="no"></iframe>
-        </div>
-
-        <canvas class = "canvas" id = "China2" height = "80" width = "1200"></canvas>
-        <div class = "iframediv" style = "height:600px;overflow:hidden">
-          <iframe src="china2.html" style="width:1250px; height:2000px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0  auto;display:block;" marginheight="0" marginwidth="0" scrolling="no"></iframe>
-        </div>
-      </div>
+        <div id="main">
+            <div id="imagesmain">
+              <div style ="margin-top:40px">
+              <input class="search searchbarimages" placeholder="Search images" />
+              <ul style = "list-style-type:none" class="paging topPaging"></ul>
+              </div>
+              <ul class="list" id = "imageslist" style = "list-style-type:none;">
+                  <li>
+                    <span class = "name" style = "display:none">america us 2013</span>
+                    <canvas class = "canvas" id = "US2013" height = "80" width = "1200"></canvas>
+                    <div class = "iframediv" style = "height:600px;overflow:hidden">
+                      <iframe id = "us2013iframe" src="us2013.html" style="width:100%;height:2000px;max-width:100%;overflow-x:hidden;overflow-y:hidden;border:none;padding:0;margin:0  auto;display:block;"scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                  </li>
+                  <li>
+                      <span class = "name" style = "display:none">australia</span>
+                      <canvas class = "canvas" id = "Australia" height = "80" width = "1200"></canvas>
+                      <div class = "iframediv" style = "height:600px;overflow:hidden">
+                        <iframe id = "australiaiframe" src="australia.html" style="width:100%;height:2000px;max-width:100%;overflow-x:hidden;overflow-y:hidden;border:none;padding:0;margin:0  auto;display:block;"scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </li>
+                  <li>
+                      <span class = "name" style = "display:none">chicago</span>
+                      <canvas class = "canvas" id = "Chicago" height = "80" width = "1200"></canvas>
+                      <div class = "iframediv" style = "height:600px;overflow:hidden">
+                        <iframe id = "chicagoiframe" src="chicago.html" style="width:100%;height:2000px;max-width:100%;overflow-x:hidden;overflow-y:hidden;border:none;padding:0;margin:0  auto;display:block;"scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                  </li>
+                  <li>
+                      <span class = "name" style = "display:none">china</span>
+                      <canvas class = "canvas" id = "China" height = "80" width = "1200"></canvas>
+                      <div class = "iframediv" style = "height:600px;overflow:hidden">
+                        <iframe src="china.html" style="width:1250px; height:2000px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0  auto;display:block;" marginheight="0"marginwidth="0" scrolling="no"></iframe>
+                      </div>
+                  </li>
+                  <li>
+                      <span class = "name" style = "display:none">china</span>
+                      <canvas class = "canvas" id = "China2" height = "80" width = "1200"></canvas>
+                      <div class = "iframediv" style = "height:600px;overflow:hidden">
+                        <iframe src="china2.html" style="width:1250px; height:2000px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0  auto;display:block;" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+        <script src="paging.js"></script>
+        <script src = "imageslist.js"></script>
+    </div>
+    </div>
       <footer>
         <hr>
         <p>&copy; mukk :) </p>

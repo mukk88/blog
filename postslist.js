@@ -1,7 +1,7 @@
     var options = {
-	    valueNames: [ 'name', 'description', 'category' ]
+        valueNames: [ 'name', 'description', 'category' ],
     };
-
+    
     var featureList = new List('postslist', options);
 
     $('#filter-games').click(function() {
