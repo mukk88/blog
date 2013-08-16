@@ -26,8 +26,8 @@
           <script src = "tabs.js" type="text/javascript"></script>
           <ul class="nav navbar-nav">
             <li id= "hometab" class="tab"><a href="javascript:switchTab('hometab', 'home');">Home</a></li>
-            <li id = "poststab" class="tab"><a href="javascript:switchTab('poststab', 'posts');">Posts</a></li>
-            <li id = "imagestab" class="active tab"><a href="javascript:switchTab('imagestab', 'images');">Images</a></li>
+            <li id = "poststab" class="active tab"><a href="javascript:switchTab('poststab', 'posts');">Posts</a></li>
+            <li id = "imagestab" class="tab"><a href="javascript:switchTab('imagestab', 'images');">Images</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -97,7 +97,7 @@
 
     </div> <!-- /container -->
 
-    <div style = "display:none" id = "posts" class = "container">
+    <div  id = "posts" class = "container">
 
       <div id="main">
           <div id="postslist">
@@ -158,7 +158,7 @@
       </footer>
     </div>
 
-    <div  id = "images" class = "container">
+    <div style = "display:none" id = "images" class = "container">
       <div class="body-content">
         <div id="main">
             <div id="imagesmain">
